@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/7ff9ef7fe4.js"></script>
+    <title>LOAN APPLICATION</title>
+</head>
+
+
+<body>
+    <div class="spinner-grow" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+    <nav class="navbar sticky-top d-lg-flex flex-lg-column align-items-center navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><i class="fas fa-home"></i> LoanApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculator.html">Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="application.html">Application</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="container col-md-6">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Personal Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Property/Income Information</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Loan Information</a>
+                </li>
+            </ul>
+        </div>
+        <br>
+    
+        <div class="container col-md-6">
+            <div class="tab-content" id="myTabContent">
+                <!-- PERSONAL INFORMATION FORM -->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="customerEmail">Email</label>
+                                    <input type="email" class="form-control" id="customerEmail" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="customerPassword">Password</label>
+                                    <input type="password" class="form-control" id="customerPassword" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="middleName">Middle Name</label>
+                                <small>(Optional)</small>
+                                <input type="text" class="form-control" id="middleName" placeholder="Enter Middle Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter Middle Name">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="dob">Date of Birth</label>
+                                    <input type="date" class="form-control" id="dob">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="genderSelect">Gender</label>
+                                    <select class="form-control" id="genderSelect">
+                                        <option name="male" value="male">Male</option>
+                                        <option name="female" value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                </div>
+                                <div class="form-group col-md-4">
+                                </div>
+                                <div class="form-group col-md-2">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="nationality">Nationality</label>
+                                <select class="form-control" id="nationality">
+                                    <option name="indian" value="indian">Indian</option>
+                                    <option name="nri" value="nri">NRI</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="aadharNo">Aadhar Number</label>
+                                <input type="text" class="form-control" id="aadharNo" placeholder="Enter Aadhar Card Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="panNo">PAN Number</label>
+                                <input type="text" class="form-control" id="panNo" placeholder="Enter PAN Card Number">
+                            </div>
+                            <!-- <button type="submit" class="btn btn-info">Submit</button> -->
+                        </form>
+                    </fieldset>
+                </div>
+                
+                <!-- PROPERTY+INCOME FORM -->
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <!-- PROPERTY INFORMATION -->
+                    <fieldset>
+                        <legend>Property Information</legend>
+                        <form>
+                            <div class="form-group">
+                                <label for="propertyName">Property Name</label>
+                                <input type="text" class="form-control" id="propertyName" placeholder="Enter Property Name">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="propertyLocation">Property Location</label>
+                                    <input type="text" class="form-control" id="propertyLocation" placeholder="Enter Location Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="estimatedAmt">Estimated Cost</label>
+                                    <input type="text" class="form-control" id="estimatedAmt" placeholder="Enter Estimated Cost">
+                                </div>
+                            </div>
+                        </form>
+                    </fieldset>
+                    <!-- INCOME INFORMATION FORM -->
+                    <fieldset>
+                        <legend>Income Information</legend>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="typeOfEmployment">Type of Employment</label>
+                                    <select class="form-control" id="typeOfEmployment" placeholder="Select Type">
+                                        <option name="salaried" value="salaried">Salaried</option>
+                                        <option name="self" value="self">Self</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="employerName">Employer Name</label>
+                                    <input type="text" class="form-control" id="employerName" placeholder="Enter Employer Name">
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="income">Enter Income</label>
+                                    <small>(per Annum)</small>
+                                    <input type="text" class="form-control" id="income" placeholder="Income">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="orgType">Organization Type</label>
+                                    <select class="form-control" id="orgType" placeholder="Select Type">
+                                        <option name="private" value="private">Private</option>
+                                        <option name="service" value="service">Service</option>
+                                        <option name="government" value="government">Government</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+                <!-- LOAN INFORMATION FORM -->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <fieldset>
+                        <legend>Loan Information</legend>
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="interestRate">Interest Rate</label>
+                                    <input type="text" class="form-control" id="interestRate" 
+                                    value="8.5%" readonly>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="maxLoanAllowance">Maximum Loan Allowance</label>
+                                    <input type="maxLoanAllowance" class="form-control" id="maxLoanAllowance" placeholder="Maximum Loan Allowance">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="loanAmount">Loan Amount</label>
+                                    <input type="text" class="form-control" id="loanAmount" placeholder="Loan Amount">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="tenure">Tenure</label>
+                                    <small>(in months)</small>
+                                    <input type="number" class="form-control" id="tenure" placeholder="Tenure">
+                                </div>
+                            </div>
+        
+                            <!-- <button type="submit" class="btn btn-info">Submit</button> -->
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="submit-button col-md-6 d-flex justify-content-end align-items-center container fixed-bottom">
+                <small>CLICK HERE AFTER FILLING ALL FORMS</small>&nbsp;&nbsp;
+                <button type="submit" class="btn btn-info">Submit</button>
+            </div>
+        </div>
+   
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
